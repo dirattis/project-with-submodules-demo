@@ -5,11 +5,19 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rattis.Investments.API", "Rattis.Investments.API\Rattis.Investments.API.csproj", "{0563CCA9-1F11-4466-B252-7C057CB35AE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rattis.Investments.Application", "Rattis.Investments.Application\Rattis.Investments.Application.csproj", "{C143BA3C-35A5-4D2D-BE4B-4A08B34C204C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rattis.Investments.Application", "Rattis.Investments.Application\Rattis.Investments.Application.csproj", "{C143BA3C-35A5-4D2D-BE4B-4A08B34C204C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rattis.Investments.Infra.Data", "Rattis.Investments.Infra.Data\Rattis.Investments.Infra.Data.csproj", "{377ED983-68F9-4D36-9C52-263155DECE64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rattis.Investments.Infra.Data", "Rattis.Investments.Infra.Data\Rattis.Investments.Infra.Data.csproj", "{377ED983-68F9-4D36-9C52-263155DECE64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rattis.Investments.Domain", "Rattis.Investments.Domain\Rattis.Investments.Domain.csproj", "{A2B69FE0-3EA9-4D5A-A2CE-9F905FFFB9D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rattis.Investments.Domain", "Rattis.Investments.Domain\Rattis.Investments.Domain.csproj", "{A2B69FE0-3EA9-4D5A-A2CE-9F905FFFB9D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - SubModules", "1 - SubModules", "{71B54203-E1CF-4E06-A45B-B88674C8C9E1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rattis.Domain", "References\Rattis.Domain\Rattis.Domain.csproj", "{4D18007C-10E7-4EA1-AA7E-8645CE73D955}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rattis.Infra.Data", "References\Rattis.Infra.Data\Rattis.Infra.Data.csproj", "{F6976DB8-5E15-48F2-85C6-75B920EAE0C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rattis.Utilities", "References\Rattis.Utilities\Rattis.Utilities.csproj", "{1FF8E75D-BB27-44AD-921C-1BB0AECE874C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +41,26 @@ Global
 		{A2B69FE0-3EA9-4D5A-A2CE-9F905FFFB9D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2B69FE0-3EA9-4D5A-A2CE-9F905FFFB9D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2B69FE0-3EA9-4D5A-A2CE-9F905FFFB9D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D18007C-10E7-4EA1-AA7E-8645CE73D955}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D18007C-10E7-4EA1-AA7E-8645CE73D955}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D18007C-10E7-4EA1-AA7E-8645CE73D955}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D18007C-10E7-4EA1-AA7E-8645CE73D955}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6976DB8-5E15-48F2-85C6-75B920EAE0C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6976DB8-5E15-48F2-85C6-75B920EAE0C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6976DB8-5E15-48F2-85C6-75B920EAE0C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6976DB8-5E15-48F2-85C6-75B920EAE0C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FF8E75D-BB27-44AD-921C-1BB0AECE874C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FF8E75D-BB27-44AD-921C-1BB0AECE874C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FF8E75D-BB27-44AD-921C-1BB0AECE874C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FF8E75D-BB27-44AD-921C-1BB0AECE874C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4D18007C-10E7-4EA1-AA7E-8645CE73D955} = {71B54203-E1CF-4E06-A45B-B88674C8C9E1}
+		{F6976DB8-5E15-48F2-85C6-75B920EAE0C3} = {71B54203-E1CF-4E06-A45B-B88674C8C9E1}
+		{1FF8E75D-BB27-44AD-921C-1BB0AECE874C} = {71B54203-E1CF-4E06-A45B-B88674C8C9E1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C8D9B51B-9F54-47BB-86AA-29E984959770}

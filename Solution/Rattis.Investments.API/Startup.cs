@@ -11,6 +11,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Rattis.Investments.Application.Contracts.Implements;
+using Rattis.Investments.Application.Contracts.Interfaces;
+using Rattis.Investments.Domain.Interfaces.Repositories;
+using Rattis.Investments.Infra.Data.Repositories;
 
 namespace Rattis.Investments.API
 {
@@ -26,7 +30,7 @@ namespace Rattis.Investments.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            AddServices(services);
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -54,6 +58,12 @@ namespace Rattis.Investments.API
             {
                 endpoints.MapControllers();
             });
+        }
+
+        private void AddServices(IServiceCollection services)
+        {
+            services.AddScoped<IClienteRepository, ClienteRepository>();
+            services.AddScoped<ICustomerApp, CustomerApp>();
         }
     }
 }

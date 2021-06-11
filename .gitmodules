@@ -1,0 +1,4 @@
+[submodule "Solution/References"]
+	path = Solution/References
+	url = ../submodule-demo
+	branch = main
