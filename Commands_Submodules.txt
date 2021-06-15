@@ -1,0 +1,4 @@
+ git submodule add -b main ../submodule-demo Solution/References
+ 
+ git clone --recurse-submodules https://github.com/dirattis/project-with-submodules-demo.git 
+ git submodule update --init --recursive
